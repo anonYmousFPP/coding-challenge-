@@ -1,0 +1,433 @@
+openapi: 3.0.3
+info:
+  title: User and Photo Management API
+  description: API for user authentication and photo management functionalities
+  version: 1.0.0
+servers:
+  - url: https://api.example.com/v1
+    description: Production server
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  schemas:
+    RegisterRequest:
+      type: object
+      properties:
+        email:
+          type: string
+          format: email
+          example: user@example.com
+          description: User's email address
+        password:
+          type: string
+          format: password
+          example: Password123!
+          description: User's password
+        name:
+          type: string
+          example: John Doe
+          description: User's full name
+      required:
+        - email
+        - password
+        - name
+    LoginRequest:
+      type: object
+      properties:
+        email:
+          type: string
+          format: email
+          example: user@example.com
+          description: User's email address
+        password:
+          type: string
+          format: password
+          example: Password123!
+          description: User's password
+      required:
+        - email
+        - password
+    LoginResponse:
+      type: object
+      properties:
+        token:
+          type: string
+          example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+          description: JWT token for authentication
+      required:
+        - token
+    UserProfile:
+      type: object
+      properties:
+        id:
+          type: string
+          example: 123e4567-e89b-12d3-a456-426614174000
+          description: Unique user identifier
+        email:
+          type: string
+          format: email
+          example: user@example.com
+          description: User's email address
+        name:
+          type: string
+          example: John Doe
+          description: User's full name
+        createdAt:
+          type: string
+          format: date-time
+          example: "2025-04-18T06:00:00Z"
+          description: Account creation timestamp
+      required:
+        - id
+        - email
+        - name
+        - createdAt
+    Photo:
+      type: object
+      properties:
+        id:
+          type: string
+          example: 987e6543-e21b-12d3-a456-426614174000
+          description: Unique photo identifier
+        userId:
+          type: string
+          example: 123e4567-e89b-12d3-a456-426614174000
+          description: ID of the user who uploaded the photo
+        url:
+          type: string
+          format: uri
+          example: https://api.example.com/photos/987e6543.jpg
+          description: URL of the uploaded photo
+        caption:
+          type: string
+          example: Beautiful sunset
+          description: Caption for the photo
+        createdAt:
+          type: string
+          format: date-time
+          example: "2025-04-18T06:00:00Z"
+          description: Photo upload timestamp
+      required:
+        - id
+        - userId
+        - url
+        - createdAt
+    PhotoList:
+      type: object
+      properties:
+        photos:
+          type: array
+          items:
+            $ref: '#/components/schemas/Photo'
+        page:
+          type: integer
+          example: 1
+          description: Current page number
+        pageSize:
+          type: integer
+          example: 10
+          description: Number of items per page
+        total:
+          type: integer
+          example: 100
+          description: Total number of photos
+      required:
+        - photos
+        - page
+        - pageSize
+        - total
+    Error:
+      type: object
+      properties:
+        code:
+          type: integer
+          example: 400
+        message:
+          type: string
+          example: Invalid request parameters
+      required:
+        - code
+        - message
+paths:
+  /auth/register:
+    post:
+      summary: Register a new user
+      description: Creates a new user account with provided email, password, and name
+      operationId: registerUser
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RegisterRequest'
+      responses:
+        '201':
+          description: User successfully registered
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserProfile'
+        '400':
+          description: Invalid request parameters
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '409':
+          description: Email already exists
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /auth/login:
+    post:
+      summary: User login
+      description: Authenticates a user and returns a JWT token
+      operationId: loginUser
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LoginRequest'
+      responses:
+        '200':
+          description: Successful login with JWT token
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LoginResponse'
+        '400':
+          description: Invalid request parameters
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: Invalid credentials
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /me:
+    get:
+      summary: Get user profile
+      description: Retrieves the authenticated user's profile details
+      operationId: getUserProfile
+      security:
+        - BearerAuth: []
+      responses:
+        '200':
+          description: User profile details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserProfile'
+        '401':
+          description: Unauthorized access, invalid or missing token
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /photos/upload:
+    post:
+      summary: Upload a photo
+      description: Uploads a photo with a caption using form-data
+      operationId: uploadPhoto
+      security:
+        - BearerAuth: []
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                image:
+                  type: string
+                  format: binary
+                  description: The photo file to upload
+                caption:
+                  type: string
+                  example: Beautiful sunset
+                  description: Caption for the photo
+              required:
+                - image
+            encoding:
+              image:
+                contentType: image/jpeg, image/png
+      responses:
+        '201':
+          description: Photo successfully uploaded
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Photo'
+        '400':
+          description: Invalid request parameters
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: Unauthorized access, invalid or missing token
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /photos:
+    get:
+      summary: List user's photos
+      description: Retrieves a paginated list of photos uploaded by the authenticated user
+      operationId: listPhotos
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: page
+          in: query
+          description: Page number for pagination
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            default: 1
+        - name: pageSize
+          in: query
+          description: Number of photos per page
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 10
+      responses:
+        '200':
+          description: List of user's photos
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PhotoList'
+        '400':
+          description: Invalid request parameters
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: Unauthorized access, invalid or missing token
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /photos/{id}:
+    get:
+      summary: Get photo details
+      description: Retrieves details and metadata of a specific photo
+      operationId: getPhoto
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: id
+          in: path
+          description: Unique identifier of the photo
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Photo details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Photo'
+        '401':
+          description: Unauthorized access, invalid or missing token
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Photo not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    delete:
+      summary: Delete a photo
+      description: Deletes a photo uploaded by the authenticated user
+      operationId: deletePhoto
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: id
+          in: path
+          description: Unique identifier of the photo
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: Photo successfully deleted
+        '401':
+          description: Unauthorized access, invalid or missing token
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Forbidden, user is not the owner of the photo
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Photo not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'

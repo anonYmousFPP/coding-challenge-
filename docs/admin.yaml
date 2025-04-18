@@ -1,0 +1,109 @@
+openapi: 3.0.3
+info:
+  title: Admin Statistics API
+  description: API for retrieving administrative statistics
+  version: 1.0.0
+servers:
+  - url: https://api.example.com/v1
+    description: Production server
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  schemas:
+    Statistics:
+      type: object
+      properties:
+        totalUsers:
+          type: integer
+          example: 1500
+          description: Total number of registered users
+        activeSessions:
+          type: integer
+          example: 300
+          description: Number of currently active user sessions
+        revenue:
+          type: number
+          format: float
+          example: 24500.75
+          description: Total revenue generated
+        lastUpdated:
+          type: string
+          format: date-time
+          example: "2025-04-18T06:00:00Z"
+          description: Timestamp of the last statistics update
+      required:
+        - totalUsers
+        - activeSessions
+        - revenue
+        - lastUpdated
+    Error:
+      type: object
+      properties:
+        code:
+          type: integer
+          example: 400
+        message:
+          type: string
+          example: "Invalid request parameters"
+      required:
+        - code
+        - message
+paths:
+  /admin/stats:
+    get:
+      summary: Retrieve admin statistics
+      description: Returns key statistics for administrative purposes, such as user counts and revenue.
+      operationId: getAdminStats
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: startDate
+          in: query
+          description: Start date for the statistics period (ISO 8601 format)
+          required: false
+          schema:
+            type: string
+            format: date
+            example: "2025-04-01"
+        - name: endDate
+          in: query
+          description: End date for the statistics period (ISO 8601 format)
+          required: false
+          schema:
+            type: string
+            format: date
+            example: "2025-04-18"
+      responses:
+        '200':
+          description: Successful response with statistics data
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Statistics'
+        '400':
+          description: Bad request due to invalid parameters
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: Unauthorized access, invalid or missing token
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Forbidden, user lacks admin privileges
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'

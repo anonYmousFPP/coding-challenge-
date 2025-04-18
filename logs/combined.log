@@ -1,0 +1,96 @@
+{"level":"info","message":"Home route accessed","timestamp":"2025-04-18T12:44:51.086Z"}
+{"level":"info","message":"GET / 304 - - 11.695 ms","timestamp":"2025-04-18T12:44:51.101Z"}
+{"level":"info","message":"GET /firebase-messaging-sw.js 404 163 - 3.139 ms","timestamp":"2025-04-18T12:44:52.740Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T12:47:37.403Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T12:49:15.703Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T12:49:30.145Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T12:49:34.746Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T12:49:53.566Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T12:49:59.691Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T12:50:20.198Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T12:50:25.238Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T12:50:28.384Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T12:50:33.465Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T12:52:43.191Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T12:53:24.426Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T12:54:20.393Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T12:54:23.467Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T12:57:42.741Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T12:57:50.454Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T12:58:34.199Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T13:00:08.751Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T13:00:33.881Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T13:00:36.181Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T13:03:19.644Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T13:05:21.732Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T13:05:59.046Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T13:06:00.792Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs\",\"status\":\"301\",\"response_time\":\"2.201ms\"}\n","timestamp":"2025-04-18T13:06:36.153Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/\",\"status\":\"200\",\"response_time\":\"2.162ms\"}\n","timestamp":"2025-04-18T13:06:36.158Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-init.js\",\"status\":\"200\",\"response_time\":\"0.285ms\"}\n","timestamp":"2025-04-18T13:06:36.192Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui.css\",\"status\":\"200\",\"response_time\":\"5.193ms\"}\n","timestamp":"2025-04-18T13:06:36.196Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-standalone-preset.js\",\"status\":\"200\",\"response_time\":\"4.029ms\"}\n","timestamp":"2025-04-18T13:06:36.198Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-bundle.js\",\"status\":\"200\",\"response_time\":\"5.184ms\"}\n","timestamp":"2025-04-18T13:06:36.204Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/favicon-32x32.png\",\"status\":\"200\",\"response_time\":\"0.609ms\"}\n","timestamp":"2025-04-18T13:06:36.370Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/firebase-messaging-sw.js\",\"status\":\"404\",\"response_time\":\"0.849ms\"}\n","timestamp":"2025-04-18T13:06:37.908Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T13:10:03.633Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T13:16:39.597Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T13:16:50.068Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T13:16:57.421Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T13:17:28.403Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T13:19:41.311Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T13:19:44.066Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/\",\"status\":\"304\",\"response_time\":\"6.265ms\"}\n","timestamp":"2025-04-18T13:20:06.030Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui.css\",\"status\":\"304\",\"response_time\":\"3.948ms\"}\n","timestamp":"2025-04-18T13:20:06.088Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-bundle.js\",\"status\":\"304\",\"response_time\":\"4.064ms\"}\n","timestamp":"2025-04-18T13:20:06.090Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-standalone-preset.js\",\"status\":\"304\",\"response_time\":\"1.348ms\"}\n","timestamp":"2025-04-18T13:20:06.093Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-init.js\",\"status\":\"200\",\"response_time\":\"1.248ms\"}\n","timestamp":"2025-04-18T13:20:06.097Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/favicon-32x32.png\",\"status\":\"304\",\"response_time\":\"0.887ms\"}\n","timestamp":"2025-04-18T13:20:06.406Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/firebase-messaging-sw.js\",\"status\":\"404\",\"response_time\":\"2.915ms\"}\n","timestamp":"2025-04-18T13:20:08.223Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T13:20:30.282Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T13:20:31.944Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/\",\"status\":\"304\",\"response_time\":\"9.256ms\"}\n","timestamp":"2025-04-18T13:20:32.363Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui.css\",\"status\":\"304\",\"response_time\":\"2.818ms\"}\n","timestamp":"2025-04-18T13:20:32.414Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-standalone-preset.js\",\"status\":\"304\",\"response_time\":\"4.695ms\"}\n","timestamp":"2025-04-18T13:20:32.422Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-bundle.js\",\"status\":\"304\",\"response_time\":\"4.906ms\"}\n","timestamp":"2025-04-18T13:20:32.425Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-init.js\",\"status\":\"304\",\"response_time\":\"1.164ms\"}\n","timestamp":"2025-04-18T13:20:32.429Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/favicon-32x32.png\",\"status\":\"304\",\"response_time\":\"0.515ms\"}\n","timestamp":"2025-04-18T13:20:32.707Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/firebase-messaging-sw.js\",\"status\":\"404\",\"response_time\":\"2.127ms\"}\n","timestamp":"2025-04-18T13:20:34.300Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T13:20:39.364Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/\",\"status\":\"304\",\"response_time\":\"6.894ms\"}\n","timestamp":"2025-04-18T13:20:40.857Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui.css\",\"status\":\"304\",\"response_time\":\"3.904ms\"}\n","timestamp":"2025-04-18T13:20:40.913Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-bundle.js\",\"status\":\"304\",\"response_time\":\"4.205ms\"}\n","timestamp":"2025-04-18T13:20:40.915Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-standalone-preset.js\",\"status\":\"304\",\"response_time\":\"1.306ms\"}\n","timestamp":"2025-04-18T13:20:40.918Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-init.js\",\"status\":\"304\",\"response_time\":\"0.575ms\"}\n","timestamp":"2025-04-18T13:20:40.921Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/favicon-32x32.png\",\"status\":\"304\",\"response_time\":\"1.101ms\"}\n","timestamp":"2025-04-18T13:20:41.141Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/firebase-messaging-sw.js\",\"status\":\"404\",\"response_time\":\"2.601ms\"}\n","timestamp":"2025-04-18T13:20:42.730Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T13:29:30.344Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T13:31:50.407Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T13:31:55.254Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T13:33:17.667Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T13:33:22.472Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T13:36:52.923Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"POST\",\"url\":\"/auth/signup\",\"status\":\"400\",\"response_time\":\"4.517ms\"}\n","timestamp":"2025-04-18T13:37:49.698Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"POST\",\"url\":\"/auth/signup\",\"status\":\"400\",\"response_time\":\"1.588ms\"}\n","timestamp":"2025-04-18T13:38:04.230Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"POST\",\"url\":\"/auth/signup\",\"status\":\"400\",\"response_time\":\"0.835ms\"}\n","timestamp":"2025-04-18T13:38:12.300Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T13:38:48.598Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T13:38:51.758Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T13:38:54.539Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T13:38:57.913Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"POST\",\"url\":\"/auth/signup\",\"status\":\"200\",\"response_time\":\"149.618ms\"}\n","timestamp":"2025-04-18T13:39:18.582Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"POST\",\"url\":\"/auth/login\",\"status\":\"400\",\"response_time\":\"3.309ms\"}\n","timestamp":"2025-04-18T13:39:24.166Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"POST\",\"url\":\"/auth/login\",\"status\":\"200\",\"response_time\":\"109.940ms\"}\n","timestamp":"2025-04-18T13:39:34.906Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/me\",\"status\":\"200\",\"response_time\":\"16.516ms\"}\n","timestamp":"2025-04-18T13:39:49.410Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/admin/stats\",\"status\":\"403\",\"response_time\":\"0.653ms\"}\n","timestamp":"2025-04-18T13:40:04.035Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/me\",\"status\":\"200\",\"response_time\":\"13.533ms\"}\n","timestamp":"2025-04-18T13:40:15.263Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/me\",\"status\":\"200\",\"response_time\":\"14.479ms\"}\n","timestamp":"2025-04-18T13:40:36.763Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/admin/stats\",\"status\":\"403\",\"response_time\":\"0.392ms\"}\n","timestamp":"2025-04-18T13:40:45.512Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T13:42:40.604Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/admin/stats\",\"status\":\"401\",\"response_time\":\"2.654ms\"}\n","timestamp":"2025-04-18T13:42:46.376Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/admin/stats\",\"status\":\"401\",\"response_time\":\"0.948ms\"}\n","timestamp":"2025-04-18T13:42:54.455Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/me\",\"status\":\"400\",\"response_time\":\"29.979ms\"}\n","timestamp":"2025-04-18T13:43:08.319Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/me\",\"status\":\"400\",\"response_time\":\"3.372ms\"}\n","timestamp":"2025-04-18T13:43:11.785Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"POST\",\"url\":\"/auth/login\",\"status\":\"500\",\"response_time\":\"21.482ms\"}\n","timestamp":"2025-04-18T13:43:42.394Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"POST\",\"url\":\"/auth/login\",\"status\":\"500\",\"response_time\":\"2.314ms\"}\n","timestamp":"2025-04-18T13:43:50.392Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T13:46:43.670Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T13:48:38.088Z"}
