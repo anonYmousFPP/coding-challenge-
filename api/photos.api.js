@@ -6,6 +6,7 @@ import rateLimit from 'express-rate-limit';
 import cloudinary from 'cloudinary';
 
 import {Photo} from "../postgreSql.js"
+import { logger } from "../util/logger.js";
 
 const route = Router();
 
@@ -127,7 +128,7 @@ route.delete('/:id', authenticate, async (req, res) => {
         where: {
           id: req.params.id,
           userId: req.user.id
-        }
+        },
       });
 
       if (!photo) {
@@ -137,7 +138,7 @@ route.delete('/:id', authenticate, async (req, res) => {
         });
       }
 
-      await cloudinary.uploader.destroy(photo.public_id);
+      await cloudinary.uploader.destroy(photo.id);
       await photo.destroy();
 
       res.json({
