@@ -28,7 +28,7 @@ const options = {
       bearerAuth: [],
     }],
   },
-  apis: ['./docs/*.yaml'], // Path to your route files
+  apis: ['./docs/*.yaml'],
 };
 
 const specs = swaggerJsdoc(options);

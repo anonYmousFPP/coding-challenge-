@@ -23,7 +23,6 @@ router.get('/stats', authorizeAdmin, async (req, res) => {
             order: [[sequelize.literal('uploadCount'), 'DESC']]
         });
 
-        // 3. Largest photo uploaded (by file size)
         const largestPhoto = await Photo.findOne({
             order: [['bytes', 'DESC']]
         });

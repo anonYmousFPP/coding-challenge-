@@ -1,7 +1,6 @@
 import winston from 'winston';
 import morgan from 'morgan';
 
-// Configure Winston (for general logging)
 const logger = winston.createLogger({
   level: 'info',
   format: winston.format.combine(
@@ -9,11 +8,8 @@ const logger = winston.createLogger({
     winston.format.json()
   ),
   transports: [
-    // Log errors to a separate file
     new winston.transports.File({ filename: 'logs/error.log', level: 'error' }),
-    // Log all messages to a combined file
     new winston.transports.File({ filename: 'logs/combined.log' }),
-    // Show colored logs in console (dev only)
     new winston.transports.Console({
       format: winston.format.combine(
         winston.format.colorize(),
@@ -23,7 +19,6 @@ const logger = winston.createLogger({
   ]
 });
 
-// Configure Morgan (for HTTP request logging)
 const morganMiddleware = morgan(
   function (tokens, req, res) {
     return JSON.stringify({

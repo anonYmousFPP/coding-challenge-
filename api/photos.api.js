@@ -4,7 +4,6 @@ import {authenticate} from '../middleware/user.middleware.js';
 import rateLimit from 'express-rate-limit';
 
 import cloudinary from 'cloudinary';
-const { v2 } = cloudinary;
 
 import {Photo} from "../postgreSql.js"
 
@@ -16,11 +15,10 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET
 });
 
-// Rate limiter: 5 uploads per minute per user
 const uploadLimiter = rateLimit({
-  windowMs: 60 * 1000, // 1 minute
-  max: 5, // Limit to 5 requests per window
-  keyGenerator: (req) => req.user.id, // Use user ID as the key
+  windowMs: 60 * 1000,
+  max: 5,
+  keyGenerator: (req) => req.user.id,
   message: {
     success: false,
     message: 'Too many uploads. Please try again after a minute.'
@@ -69,14 +67,14 @@ route.get('/', authenticate, async (req, res) => {
     try {
       const { page = 1, limit = 10 } = req.query;
       const offset = (page - 1) * limit;
-      
+
       const photos = await Photo.findAll({
         where: { userId: req.user.id },
         limit,
         offset,
         order: [['createdAt', 'DESC']]
       });
-  
+
       res.json({
         success: true,
         photos,
@@ -103,14 +101,14 @@ route.get('/:id', authenticate, async (req, res) => {
           userId: req.user.id
         }
       });
-  
+
       if (!photo) {
         return res.status(404).json({
           success: false,
           message: 'Photo not found'
         });
       }
-  
+
       res.json({
         success: true,
         photo

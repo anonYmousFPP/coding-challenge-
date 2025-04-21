@@ -1,6 +1,5 @@
 import Joi from "joi";
 
-// Joi schema for login
 const loginSchema = Joi.object({
     email: Joi.string()
         .email()
@@ -16,7 +15,6 @@ const loginSchema = Joi.object({
         })
 });
 
-// Joi schema for signup
 const signupSchema = Joi.object({
     name: Joi.string()
         .trim()
@@ -48,7 +46,6 @@ const signupSchema = Joi.object({
         })
 });
 
-// Validation middleware
 const validateBody = (schema) => {
     return (req, res, next) => {
         const { error, value } = schema.validate(req.body, { abortEarly: false });
@@ -60,11 +57,10 @@ const validateBody = (schema) => {
                 errors: errorMessages
             });
         }
-        req.body = value; // Update req.body with validated and sanitized values
+        req.body = value;
         next();
     };
 };
 
-// Export validation middleware for each endpoint
 export const validateLogin = validateBody(loginSchema);
 export const validateSignup = validateBody(signupSchema);
