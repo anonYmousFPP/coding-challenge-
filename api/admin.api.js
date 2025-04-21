@@ -6,10 +6,7 @@ const router = Router();
 
 router.get('/stats', authenticate, authorizeAdmin, async (req, res) => {
     try {
-      // 1. Get total uploads count
       const totalUploads = await Photo.count();
-  
-      // 2. Fixed most active uploader query
       const [mostActiveUploader] = await sequelize.query(`
         SELECT 
           u.id, 
@@ -22,13 +19,12 @@ router.get('/stats', authenticate, authorizeAdmin, async (req, res) => {
         ORDER BY COUNT(p.id) DESC
         LIMIT 1
       `, { type: sequelize.QueryTypes.SELECT });
-  
-      // 3. Get largest photo
+
       const largestPhoto = await Photo.findOne({
         order: [['bytes', 'DESC']],
         raw: true
       });
-  
+
       res.json({
         success: true,
         stats: {

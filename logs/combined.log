@@ -222,3 +222,93 @@
 {"level":"info","message":"Server running on port 3000","timestamp":"2025-04-21T06:05:43.170Z"}
 {"level":"info","message":"Server running on port 3000","timestamp":"2025-04-21T06:05:47.657Z"}
 {"level":"info","message":"Server running on port 3000","timestamp":"2025-04-21T06:05:50.416Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-21T06:08:11.799Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/\",\"status\":\"304\",\"response_time\":\"11.228ms\"}\n","timestamp":"2025-04-21T06:08:29.787Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui.css\",\"status\":\"304\",\"response_time\":\"4.460ms\"}\n","timestamp":"2025-04-21T06:08:29.857Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-bundle.js\",\"status\":\"304\",\"response_time\":\"4.613ms\"}\n","timestamp":"2025-04-21T06:08:29.859Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-standalone-preset.js\",\"status\":\"304\",\"response_time\":\"1.280ms\"}\n","timestamp":"2025-04-21T06:08:29.862Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-init.js\",\"status\":\"304\",\"response_time\":\"0.683ms\"}\n","timestamp":"2025-04-21T06:08:29.866Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-init.js\",\"status\":\"200\",\"response_time\":\"0.985ms\"}\n","timestamp":"2025-04-21T06:08:29.880Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-standalone-preset.js\",\"status\":\"200\",\"response_time\":\"5.749ms\"}\n","timestamp":"2025-04-21T06:08:29.892Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-bundle.js\",\"status\":\"200\",\"response_time\":\"5.706ms\"}\n","timestamp":"2025-04-21T06:08:29.905Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/firebase-messaging-sw.js\",\"status\":\"404\",\"response_time\":\"2.314ms\"}\n","timestamp":"2025-04-21T06:08:31.851Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/firebase-messaging-sw.js\",\"status\":\"404\",\"response_time\":\"1.315ms\"}\n","timestamp":"2025-04-21T06:08:31.861Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/\",\"status\":\"200\",\"response_time\":\"1.673ms\"}\n","timestamp":"2025-04-21T06:10:10.267Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-init.js\",\"status\":\"200\",\"response_time\":\"0.485ms\"}\n","timestamp":"2025-04-21T06:10:10.320Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui.css\",\"status\":\"200\",\"response_time\":\"5.924ms\"}\n","timestamp":"2025-04-21T06:10:10.324Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-standalone-preset.js\",\"status\":\"200\",\"response_time\":\"8.222ms\"}\n","timestamp":"2025-04-21T06:10:10.328Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-init.js\",\"status\":\"304\",\"response_time\":\"1.030ms\"}\n","timestamp":"2025-04-21T06:10:10.335Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-standalone-preset.js\",\"status\":\"304\",\"response_time\":\"1.811ms\"}\n","timestamp":"2025-04-21T06:10:10.343Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-bundle.js\",\"status\":\"200\",\"response_time\":\"6.908ms\"}\n","timestamp":"2025-04-21T06:10:10.346Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/favicon-32x32.png\",\"status\":\"304\",\"response_time\":\"0.826ms\"}\n","timestamp":"2025-04-21T06:10:10.673Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-bundle.js\",\"status\":\"304\",\"response_time\":\"0.791ms\"}\n","timestamp":"2025-04-21T06:10:10.885Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/\",\"status\":\"304\",\"response_time\":\"1.677ms\"}\n","timestamp":"2025-04-21T06:10:12.488Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-init.js\",\"status\":\"304\",\"response_time\":\"0.588ms\"}\n","timestamp":"2025-04-21T06:10:12.534Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui.css\",\"status\":\"304\",\"response_time\":\"5.311ms\"}\n","timestamp":"2025-04-21T06:10:12.536Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-bundle.js\",\"status\":\"304\",\"response_time\":\"5.742ms\"}\n","timestamp":"2025-04-21T06:10:12.537Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-standalone-preset.js\",\"status\":\"304\",\"response_time\":\"6.588ms\"}\n","timestamp":"2025-04-21T06:10:12.539Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-init.js\",\"status\":\"304\",\"response_time\":\"0.889ms\"}\n","timestamp":"2025-04-21T06:10:12.546Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-standalone-preset.js\",\"status\":\"304\",\"response_time\":\"1.185ms\"}\n","timestamp":"2025-04-21T06:10:12.555Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/favicon-32x32.png\",\"status\":\"304\",\"response_time\":\"0.694ms\"}\n","timestamp":"2025-04-21T06:10:12.767Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-bundle.js\",\"status\":\"304\",\"response_time\":\"0.727ms\"}\n","timestamp":"2025-04-21T06:10:13.087Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/firebase-messaging-sw.js\",\"status\":\"404\",\"response_time\":\"1.515ms\"}\n","timestamp":"2025-04-21T06:10:14.443Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/firebase-messaging-sw.js\",\"status\":\"404\",\"response_time\":\"0.938ms\"}\n","timestamp":"2025-04-21T06:10:14.453Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-21T06:10:20.950Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/\",\"status\":\"304\",\"response_time\":\"6.130ms\"}\n","timestamp":"2025-04-21T06:10:24.216Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui.css\",\"status\":\"304\",\"response_time\":\"6.327ms\"}\n","timestamp":"2025-04-21T06:10:24.270Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-bundle.js\",\"status\":\"304\",\"response_time\":\"6.268ms\"}\n","timestamp":"2025-04-21T06:10:24.273Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-standalone-preset.js\",\"status\":\"304\",\"response_time\":\"1.758ms\"}\n","timestamp":"2025-04-21T06:10:24.277Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-init.js\",\"status\":\"200\",\"response_time\":\"1.359ms\"}\n","timestamp":"2025-04-21T06:10:24.281Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-standalone-preset.js\",\"status\":\"304\",\"response_time\":\"1.233ms\"}\n","timestamp":"2025-04-21T06:10:24.292Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-bundle.js\",\"status\":\"304\",\"response_time\":\"1.404ms\"}\n","timestamp":"2025-04-21T06:10:24.296Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/favicon-32x32.png\",\"status\":\"304\",\"response_time\":\"1.191ms\"}\n","timestamp":"2025-04-21T06:10:24.493Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/firebase-messaging-sw.js\",\"status\":\"404\",\"response_time\":\"3.618ms\"}\n","timestamp":"2025-04-21T06:10:26.160Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/\",\"status\":\"304\",\"response_time\":\"1.403ms\"}\n","timestamp":"2025-04-21T06:13:45.148Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui.css\",\"status\":\"304\",\"response_time\":\"2.572ms\"}\n","timestamp":"2025-04-21T06:13:45.209Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-bundle.js\",\"status\":\"304\",\"response_time\":\"3.058ms\"}\n","timestamp":"2025-04-21T06:13:45.211Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-standalone-preset.js\",\"status\":\"304\",\"response_time\":\"1.682ms\"}\n","timestamp":"2025-04-21T06:13:45.216Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-init.js\",\"status\":\"304\",\"response_time\":\"0.870ms\"}\n","timestamp":"2025-04-21T06:13:45.220Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/favicon-32x32.png\",\"status\":\"304\",\"response_time\":\"0.821ms\"}\n","timestamp":"2025-04-21T06:13:45.407Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/firebase-messaging-sw.js\",\"status\":\"404\",\"response_time\":\"1.277ms\"}\n","timestamp":"2025-04-21T06:13:47.064Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/\",\"status\":\"304\",\"response_time\":\"1.007ms\"}\n","timestamp":"2025-04-21T06:13:51.686Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui.css\",\"status\":\"304\",\"response_time\":\"2.676ms\"}\n","timestamp":"2025-04-21T06:13:51.742Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-bundle.js\",\"status\":\"304\",\"response_time\":\"3.120ms\"}\n","timestamp":"2025-04-21T06:13:51.744Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-standalone-preset.js\",\"status\":\"304\",\"response_time\":\"0.988ms\"}\n","timestamp":"2025-04-21T06:13:51.748Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-init.js\",\"status\":\"304\",\"response_time\":\"0.909ms\"}\n","timestamp":"2025-04-21T06:13:51.752Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/favicon-32x32.png\",\"status\":\"304\",\"response_time\":\"1.608ms\"}\n","timestamp":"2025-04-21T06:13:52.017Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/firebase-messaging-sw.js\",\"status\":\"404\",\"response_time\":\"0.950ms\"}\n","timestamp":"2025-04-21T06:13:53.666Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-21T06:13:58.206Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/\",\"status\":\"304\",\"response_time\":\"9.632ms\"}\n","timestamp":"2025-04-21T06:14:01.814Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui.css\",\"status\":\"304\",\"response_time\":\"3.519ms\"}\n","timestamp":"2025-04-21T06:14:01.871Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-bundle.js\",\"status\":\"304\",\"response_time\":\"2.156ms\"}\n","timestamp":"2025-04-21T06:14:01.877Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-standalone-preset.js\",\"status\":\"304\",\"response_time\":\"1.532ms\"}\n","timestamp":"2025-04-21T06:14:01.882Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-init.js\",\"status\":\"200\",\"response_time\":\"1.613ms\"}\n","timestamp":"2025-04-21T06:14:01.888Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/favicon-32x32.png\",\"status\":\"304\",\"response_time\":\"0.878ms\"}\n","timestamp":"2025-04-21T06:14:02.172Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/firebase-messaging-sw.js\",\"status\":\"404\",\"response_time\":\"1.853ms\"}\n","timestamp":"2025-04-21T06:14:03.814Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"POST\",\"url\":\"/auth/signup\",\"status\":\"200\",\"response_time\":\"146.823ms\"}\n","timestamp":"2025-04-21T06:14:15.156Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"POST\",\"url\":\"/auth/login\",\"status\":\"200\",\"response_time\":\"115.209ms\"}\n","timestamp":"2025-04-21T06:14:58.045Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/me\",\"status\":\"400\",\"response_time\":\"1.672ms\"}\n","timestamp":"2025-04-21T06:15:27.285Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/me\",\"status\":\"400\",\"response_time\":\"0.861ms\"}\n","timestamp":"2025-04-21T06:19:18.756Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/me\",\"status\":\"200\",\"response_time\":\"23.560ms\"}\n","timestamp":"2025-04-21T06:20:35.739Z"}
+{"level":"info","message":"Attempting to create photo","timestamp":"2025-04-21T06:21:21.158Z","user":"03a8ad0f-1d4f-4739-a4b1-24a74d6d47f4"}
+{"error":"Cannot read properties of undefined (reading 'tempFilePath')","level":"error","message":"Error creating photo","stack":"TypeError: Cannot read properties of undefined (reading 'tempFilePath')\n    at file:///home/user/Desktop/Coding/Coding%20Test%201/api/photos.api.js:37:41\n    at Layer.handleRequest (/home/user/Desktop/Coding/Coding Test 1/node_modules/router/lib/layer.js:152:17)\n    at next (/home/user/Desktop/Coding/Coding Test 1/node_modules/router/lib/route.js:157:13)\n    at file:///home/user/Desktop/Coding/Coding%20Test%201/node_modules/express-rate-limit/dist/index.mjs:794:7\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///home/user/Desktop/Coding/Coding%20Test%201/node_modules/express-rate-limit/dist/index.mjs:676:5","timestamp":"2025-04-21T06:21:21.159Z","user":"03a8ad0f-1d4f-4739-a4b1-24a74d6d47f4"}
+{"level":"info","message":"HTTP Request: {\"method\":\"POST\",\"url\":\"/photos/upload\",\"status\":\"500\",\"response_time\":\"51.507ms\"}\n","timestamp":"2025-04-21T06:21:21.161Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-21T06:22:35.822Z"}
+{"level":"info","message":"Attempting to create photo","timestamp":"2025-04-21T06:22:45.026Z","user":"03a8ad0f-1d4f-4739-a4b1-24a74d6d47f4"}
+{"error":"Cannot read properties of undefined (reading 'tempFilePath')","level":"error","message":"Error creating photo","stack":"TypeError: Cannot read properties of undefined (reading 'tempFilePath')\n    at file:///home/user/Desktop/Coding/Coding%20Test%201/api/photos.api.js:37:41\n    at Layer.handleRequest (/home/user/Desktop/Coding/Coding Test 1/node_modules/router/lib/layer.js:152:17)\n    at next (/home/user/Desktop/Coding/Coding Test 1/node_modules/router/lib/route.js:157:13)\n    at file:///home/user/Desktop/Coding/Coding%20Test%201/node_modules/express-rate-limit/dist/index.mjs:794:7\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///home/user/Desktop/Coding/Coding%20Test%201/node_modules/express-rate-limit/dist/index.mjs:676:5","timestamp":"2025-04-21T06:22:45.026Z","user":"03a8ad0f-1d4f-4739-a4b1-24a74d6d47f4"}
+{"level":"info","message":"HTTP Request: {\"method\":\"POST\",\"url\":\"/photos/upload\",\"status\":\"500\",\"response_time\":\"24.198ms\"}\n","timestamp":"2025-04-21T06:22:45.030Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/\",\"status\":\"304\",\"response_time\":\"4.197ms\"}\n","timestamp":"2025-04-21T06:22:57.685Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui.css\",\"status\":\"304\",\"response_time\":\"4.647ms\"}\n","timestamp":"2025-04-21T06:22:57.741Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-bundle.js\",\"status\":\"304\",\"response_time\":\"2.259ms\"}\n","timestamp":"2025-04-21T06:22:57.747Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-standalone-preset.js\",\"status\":\"304\",\"response_time\":\"1.241ms\"}\n","timestamp":"2025-04-21T06:22:57.752Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-init.js\",\"status\":\"200\",\"response_time\":\"1.318ms\"}\n","timestamp":"2025-04-21T06:22:57.757Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/api-docs/favicon-32x32.png\",\"status\":\"304\",\"response_time\":\"1.876ms\"}\n","timestamp":"2025-04-21T06:22:58.071Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/firebase-messaging-sw.js\",\"status\":\"404\",\"response_time\":\"2.593ms\"}\n","timestamp":"2025-04-21T06:22:59.799Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"POST\",\"url\":\"/photos/upload\",\"status\":\"401\",\"response_time\":\"5.070ms\"}\n","timestamp":"2025-04-21T06:23:48.065Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"POST\",\"url\":\"/auth/login\",\"status\":\"200\",\"response_time\":\"138.630ms\"}\n","timestamp":"2025-04-21T06:24:11.191Z"}
+{"level":"info","message":"Attempting to create photo","timestamp":"2025-04-21T06:24:33.371Z","user":"03a8ad0f-1d4f-4739-a4b1-24a74d6d47f4"}
+{"level":"info","message":"Photo created successfully","photoId":"xdutauol7wajdjikui9o","timestamp":"2025-04-21T06:24:38.692Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"POST\",\"url\":\"/photos/upload\",\"status\":\"200\",\"response_time\":\"5361.095ms\"}\n","timestamp":"2025-04-21T06:24:38.694Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/photos?page=1&pageSize=10\",\"status\":\"200\",\"response_time\":\"30.521ms\"}\n","timestamp":"2025-04-21T06:25:25.488Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"GET\",\"url\":\"/photos/a78bf31a-d1f6-4af0-a06a-07a6af4456a6\",\"status\":\"200\",\"response_time\":\"23.176ms\"}\n","timestamp":"2025-04-21T06:25:40.257Z"}
+{"level":"info","message":"HTTP Request: {\"method\":\"DELETE\",\"url\":\"/photos/a78bf31a-d1f6-4af0-a06a-07a6af4456a6\",\"status\":\"200\",\"response_time\":\"2535.969ms\"}\n","timestamp":"2025-04-21T06:25:58.049Z"}

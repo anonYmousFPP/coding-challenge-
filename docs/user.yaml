@@ -16,6 +16,10 @@ components:
     RegisterRequest:
       type: object
       properties:
+        name:
+          type: string
+          example: John Doe
+          description: User's full name
         email:
           type: string
           format: email
@@ -26,14 +30,15 @@ components:
           format: password
           example: Password123!
           description: User's password
-        name:
+        role:
           type: string
-          example: John Doe
-          description: User's full name
+          enum: ['admin', 'user']
+          example: 'admin'
       required:
+        - name
         - email
         - password
-        - name
+        - role
     LoginRequest:
       type: object
       properties:
@@ -152,7 +157,7 @@ components:
         - code
         - message
 paths:
-  /auth/register:
+  /auth/signup:
     post:
       summary: Register a new user
       description: Creates a new user account with provided email, password, and name
@@ -264,7 +269,7 @@ paths:
             schema:
               type: object
               properties:
-                image:
+                photo:
                   type: string
                   format: binary
                   description: The photo file to upload
@@ -273,10 +278,10 @@ paths:
                   example: Beautiful sunset
                   description: Caption for the photo
               required:
-                - image
+                - photo
             encoding:
-              image:
-                contentType: image/jpeg, image/png
+              photo:
+                contentType: photo/jpeg, photo/png
       responses:
         '201':
           description: Photo successfully uploaded
